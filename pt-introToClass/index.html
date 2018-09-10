@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>hw</title>
+    <script type="text/javascript">
+
+        var clickCount = -1; // At -1 because it initially displays clickCount and so it will correctly display 1 when first clicked
+        function main() { // this is the javascript curly brace convention
+
+            clickCount++;
+            document.getElementById('stringTest').innerText = clickCount;
+            //alert("hi again\n" + "Times Clicked: " + clickCount);
+        }
+    </script>
+</head>
+<body onload="main()";>
+    <span id="stringTest">Hello World </span>
+    <button onclick="main()">test</button> 
+</body>
+</html>
